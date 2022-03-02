@@ -522,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.bg-desk{
+  background-image: url("../images/background.jpg");
+}
+
 .absolute {
   position: absolute;
 }
@@ -608,14 +612,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[rgba\(0\2c 0\2c 0\2c \.5\)\] {
   background-color: rgba(0,0,0,.5);
-}
-
-.bg-\[url\(\'\.\/images\/background\.jpg\'\)\] {
-  background-image: url('./images/background.jpg');
-}
-
-.bg-\[url\(\'\/images\/background\.jpg\'\)\] {
-  background-image: url('/images/background.jpg');
 }
 
 .bg-cover {
