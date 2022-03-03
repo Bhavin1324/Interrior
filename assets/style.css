@@ -522,10 +522,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.bg-desk{
-  background-image: url("../images/background.jpg");
-}
-
 .absolute {
   position: absolute;
 }
@@ -557,8 +553,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .flex {
@@ -610,8 +610,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[rgba\(0\2c 0\2c 0\2c \.5\)\] {
-  background-color: rgba(0,0,0,.5);
+.bg-\[rgba\(0\2c 0\2c 0\2c \.4\)\] {
+  background-color: rgba(0,0,0,.4);
+}
+
+.bg-\[url\(\'\.\.\/images\/background\.jpg\'\)\] {
+  background-image: url('../images/background.jpg');
 }
 
 .bg-cover {
@@ -631,8 +635,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.mix-blend-darken {
-  mix-blend-mode: darken;
+.bg-blend-darken {
+  background-blend-mode: darken;
 }
 
 .invert {
@@ -662,11 +666,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-@media (min-width: 1024px) {
-  .lg\:inline {
+@media (min-width: 768px) {
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .md\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .md\:inline {
     display: inline;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .md\:self-center {
+    align-self: center;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:hover\:cursor-default:hover {
+    cursor: default;
+  }
+}
+
+@media (min-width: 1024px) {
   .lg\:flex {
     display: flex;
   }
@@ -679,24 +714,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: space-around;
   }
 
-  .lg\:gap-3 {
-    gap: 0.75rem;
-  }
-
   .lg\:gap-8 {
     gap: 2rem;
   }
 
   .lg\:self-center {
     align-self: center;
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:hover\:cursor-default:hover {
-    cursor: default;
   }
 }

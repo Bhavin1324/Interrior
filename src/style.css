@@ -12,7 +12,4 @@
 .nav-menu.active{
     @apply right-0;
 }
-.bg-desk{
-    background-image: url("../images/background.jpg");
-}
 @tailwind utilities;
