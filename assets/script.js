@@ -12,3 +12,19 @@ document.querySelectorAll('.nav-item').forEach(n => n.addEventListener('click', 
     menu.classList.toggle('active');
     navbar.classList.toggle('light-up');
 }));
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1024) {
+        if(navbar.classList.contains('light-up')){
+            navbar.classList.remove('light-up');
+        }
+    }
+    else{
+        if(hamburger.classList.contains('active')){
+            navbar.classList.add('light-up');
+        }
+        else{
+            navbar.classList.remove('light-up');
+        }
+    }
+})

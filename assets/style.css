@@ -660,6 +660,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80%;
 }
 
+.resize {
+  resize: both;
+}
+
 .gap-20 {
   gap: 5rem;
 }
@@ -755,6 +759,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:gap-3 {
