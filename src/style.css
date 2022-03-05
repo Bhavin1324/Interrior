@@ -22,6 +22,6 @@
     @apply bg-slate-50 text-black;
 }
 .nav-menu.active{
-    @apply top-14;
+    @apply right-0;
 }
 @tailwind utilities;
