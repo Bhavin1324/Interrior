@@ -9,7 +9,19 @@
 .hamburger.active .bar:nth-child(3){
     @apply -rotate-45 -translate-y-2.5;
 }
+.light-up{
+    @apply bg-slate-50 text-black shadow-md;
+}
+.navbar.light-up .bar{
+    @apply bg-black;
+}
+.navbar.light-up .brand-logo{
+    @apply invert-0;
+}
+.mobile.light-up {
+    @apply bg-slate-50 text-black;
+}
 .nav-menu.active{
-    @apply right-0;
+    @apply top-14;
 }
 @tailwind utilities;
