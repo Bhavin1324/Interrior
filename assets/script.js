@@ -28,3 +28,24 @@ window.addEventListener('resize', () => {
         }
     }
 })
+
+//carousel
+let slides = document.querySelectorAll('.slide');
+let count = 0;
+function reset(){
+    slides.forEach(slide=>{slide.style.opacity = "0"})
+}
+function slideShow(){
+    reset();
+    slides[0].style.opacity = "1";
+    setInterval(()=>{
+        if(count === slides.length - 1){count = -1}
+        nextSlide();
+    },8000);
+}
+function nextSlide(){
+    reset();
+    slides[count + 1].style.opacity = "1";
+    count++;
+}
+slideShow();
