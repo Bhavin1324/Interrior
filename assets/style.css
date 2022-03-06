@@ -706,10 +706,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../images/background-3.jpg');
 }
 
-.bg-\[url\(\'\.\.\/images\/bg-4\.jpg\'\)\] {
-  background-image: url('../images/bg-4.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
