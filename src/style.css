@@ -24,4 +24,23 @@
 .nav-menu.active{
     @apply right-0;
 }
+
+.scroll-active{
+    @apply bg-slate-50 text-black shadow-md;
+}
+.navbar.scroll-active .brand-logo{ 
+    @apply invert-0
+}
+.navbar.scroll-active .brand-logo ~ span{
+    @apply text-black
+}
+.navbar.scroll-active .bar{
+    @apply bg-black;
+}
+.navbar.scroll-active .peer{
+    @apply text-black;
+}
+.navbar.scroll-active li hr{
+    @apply border-black;
+}
 @tailwind utilities;

@@ -1,6 +1,23 @@
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.nav-menu');
-const navbar = document.querySelector('.navbar');
+AOS.init({
+    startEvent: 'DOMContentLoaded',
+    offset: 350,
+    duration: 1000
+});
+let elem = document.querySelector(".navbar");
+function scrollAction() {
+    console.log(window.scrollY);
+    elem.classList.toggle("scroll-active", window.scrollY > 0);
+    if (window.scrollY > 0) {
+        elem.classList.add("scroll-active");
+    }
+    else {
+        elem.classList.remove("scroll-active");
+    }
+}
+
+let hamburger = document.querySelector('.hamburger');
+let menu = document.querySelector('.nav-menu');
+let navbar = document.querySelector('.navbar');
 //hamburger styling
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -15,15 +32,15 @@ document.querySelectorAll('.nav-item').forEach(n => n.addEventListener('click', 
 
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 1024) {
-        if(navbar.classList.contains('light-up')){
+        if (navbar.classList.contains('light-up')) {
             navbar.classList.remove('light-up');
         }
     }
-    else{
-        if(hamburger.classList.contains('active')){
+    else {
+        if (hamburger.classList.contains('active')) {
             navbar.classList.add('light-up');
         }
-        else{
+        else {
             navbar.classList.remove('light-up');
         }
     }
@@ -32,18 +49,18 @@ window.addEventListener('resize', () => {
 //carousel
 let slides = document.querySelectorAll('.slide');
 let count = 0;
-function reset(){
-    slides.forEach(slide=>{slide.style.opacity = "0"})
+function reset() {
+    slides.forEach(slide => { slide.style.opacity = "0" })
 }
-function slideShow(){
+function slideShow() {
     reset();
     slides[0].style.opacity = "1";
-    setInterval(()=>{
-        if(count === slides.length - 1){count = -1}
+    setInterval(() => {
+        if (count === slides.length - 1) { count = -1 }
         nextSlide();
-    },8000);
+    }, 8000);
 }
-function nextSlide(){
+function nextSlide() {
     reset();
     slides[count + 1].style.opacity = "1";
     count++;

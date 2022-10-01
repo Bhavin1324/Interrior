@@ -549,6 +549,41 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.scroll-active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.navbar.scroll-active .brand-logo {
+  --tw-invert: invert(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.navbar.scroll-active .brand-logo ~ span {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.navbar.scroll-active .bar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.navbar.scroll-active .peer {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.navbar.scroll-active li hr {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .fixed {
   position: fixed;
 }
@@ -583,6 +618,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-0 {
   right: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .-z-10 {
@@ -637,6 +676,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2px;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -663,6 +706,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .resize {
   resize: both;
 }
@@ -673,6 +720,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .self-center {
   align-self: center;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-black {
@@ -692,6 +743,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[rgba\(0\2c 0\2c 0\2c \.6\)\] {
   background-color: rgba(0,0,0,.6);
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/images\/background-1\.jpg\'\)\] {
@@ -767,6 +823,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+@media (min-width: 640px) {
+  .sm\:w-\[80\%\] {
+    width: 80%;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:inline {
     display: inline;
@@ -805,6 +867,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:justify-around {
