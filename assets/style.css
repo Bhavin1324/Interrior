@@ -823,12 +823,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .sm\:w-\[80\%\] {
-    width: 80%;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:inline {
     display: inline;
@@ -867,10 +861,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:w-\[50\%\] {
-    width: 50%;
   }
 
   .lg\:justify-around {
