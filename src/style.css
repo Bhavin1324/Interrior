@@ -43,4 +43,12 @@
 .navbar.scroll-active li hr{
     @apply border-black;
 }
+
+.heading{
+    @apply text-3xl md:text-4xl w-fit mx-auto
+}
+.lined-heading{
+    @apply border-2 bg-yellow-700 border-yellow-700 w-[60%] block mx-auto 
+}
+
 @tailwind utilities;
