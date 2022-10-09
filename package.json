@@ -95,7 +95,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "tw-build": "tailwindcss build ./src/style.css -o ./assets/style.css",
+    "tw-build": "npx tailwindcss -i ./src/style.css -o ./assets/style.css",
     "tw-watch": "npx tailwindcss -i ./src/style.css -o ./assets/style.css --watch"
   },
   "author": "",
