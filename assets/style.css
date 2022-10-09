@@ -648,12 +648,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.my-\[50\%\] {
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+.my-\[100px\] {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
 }
 
 .mr-10 {
   margin-right: 2.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .block {
@@ -680,8 +704,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 300px;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[60\%\] {
+  height: 60%;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[600px\] {
+  min-height: 600px;
 }
 
 .w-0 {
@@ -710,8 +764,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[670px\] {
+  width: 670px;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
 .resize {
   resize: both;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-20 {
@@ -720,6 +798,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .self-center {
   align-self: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .border {
@@ -774,6 +856,57 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: center;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -782,6 +915,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-yellow-700 {
+  --tw-text-opacity: 1;
+  color: rgb(161 98 7 / var(--tw-text-opacity));
+}
+
+.text-yellow-600 {
+  --tw-text-opacity: 1;
+  color: rgb(202 138 4 / var(--tw-text-opacity));
 }
 
 .mix-blend-darken {
@@ -824,6 +967,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:my-\[100px\] {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .md\:my-\[60px\] {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .md\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
+  .md\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
   .md\:inline {
     display: inline;
   }
@@ -832,12 +993,29 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: flex;
   }
 
+  .md\:w-\[600px\] {
+    width: 600px;
+  }
+
+  .md\:w-\[700px\] {
+    width: 700px;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px;
+  }
+
   .md\:gap-3 {
     gap: 0.75rem;
   }
 
   .md\:self-center {
     align-self: center;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:text-lg {
@@ -863,6 +1041,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
+  .lg\:min-h-\[800px\] {
+    min-height: 800px;
+  }
+
+  .lg\:min-h-\[700px\] {
+    min-height: 700px;
+  }
+
+  .lg\:w-\[700px\] {
+    width: 700px;
+  }
+
   .lg\:justify-around {
     justify-content: space-around;
   }
@@ -873,5 +1063,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:self-center {
     align-self: center;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }

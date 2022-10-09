@@ -3,6 +3,7 @@ AOS.init({
     offset: 350,
     duration: 1000
 });
+
 let elem = document.querySelector(".navbar");
 function scrollAction() {
     console.log(window.scrollY);
@@ -50,7 +51,7 @@ window.addEventListener('resize', () => {
 let slides = document.querySelectorAll('.slide');
 let count = 0;
 function reset() {
-    slides.forEach(slide => { slide.style.opacity = "0" })
+    slides.forEach(slide => slide.style.opacity = "0")
 }
 function slideShow() {
     reset();
