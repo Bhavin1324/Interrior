@@ -776,6 +776,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 350px;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
 .resize {
   resize: both;
 }
