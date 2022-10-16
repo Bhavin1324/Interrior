@@ -1,7 +1,7 @@
 AOS.init({
     startEvent: 'DOMContentLoaded',
     offset: 100,
-    duration: 1000
+    duration: 1000,
 });
 
 let elem = document.querySelector(".navbar");

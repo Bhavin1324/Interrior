@@ -44,11 +44,28 @@
     @apply border-black;
 }
 
-.heading{
-    @apply text-3xl md:text-4xl w-fit mx-auto
+.pop-heading{
+    @apply m-4 text-3xl md:text-4xl w-fit mx-auto relative before:absolute before:-top-3 before:-right-4 before:w-[100px] before:h-[70px] before:bg-yellow-400 before:-z-10 before:opacity-40 before:rounded-full
 }
 .lined-heading{
-    @apply border-2 bg-yellow-700 border-yellow-700 w-[60%] block mx-auto 
+    @apply m-4 font-bold text-3xl md:text-4xl w-fit mx-auto relative before:absolute before:-bottom-1 before:right-1/2 before:translate-x-1/2 before:w-[40%] before:h-[3px] before:bg-yellow-700 before:-z-10 before:rounded-full
 }
-
+.back-pop{
+    @apply relative before:content-[''] before:absolute before:top-1 before:-left-4 before:w-[70px] before:h-[70px] before:bg-yellow-400 before:-z-10 before:opacity-40 before:rounded-full
+}
+.cards{
+    @apply flex flex-wrap transition-all duration-300 ease-linear justify-evenly -mx-10
+}
+.card{
+    @apply basis-full md:basis-6/12 lg:basis-4/12 p-2 rounded-2xl overflow-hidden 
+}
+.card-img{
+    @apply rounded-xl overflow-hidden relative
+}
+.img-cover{
+    @apply absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,.6)]
+}
+.ch-line{
+    @apply transition-all duration-300 ease-out absolute -bottom-1 left-0 h-[2px] w-0 bg-yellow-700 group-hover:w-[50%]
+}
 @tailwind utilities;
