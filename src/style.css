@@ -54,10 +54,10 @@
     @apply relative before:content-[''] before:absolute before:top-1 before:-left-4 before:w-[70px] before:h-[70px] before:bg-yellow-400 before:-z-10 before:opacity-40 before:rounded-full
 }
 .cards{
-    @apply flex flex-wrap transition-all duration-300 ease-linear justify-evenly -mx-10
+    @apply flex flex-wrap
 }
 .card{
-    @apply basis-full md:basis-6/12 lg:basis-4/12 p-2 rounded-2xl overflow-hidden 
+    @apply basis-full md:basis-6/12 lg:basis-4/12
 }
 .card-img{
     @apply rounded-xl overflow-hidden relative
@@ -67,5 +67,8 @@
 }
 .ch-line{
     @apply transition-all duration-300 ease-out absolute -bottom-1 left-0 h-[2px] w-0 bg-yellow-700 group-hover:w-[50%]
+}
+.item{
+    @apply transition-all ease-linear duration-200 m-4 md:m-6 rounded-xl group-hover:shadow-xl
 }
 @tailwind utilities;
