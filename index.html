@@ -1,210 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Akshar Enterprise</title>
     <script src="./assets/script.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </head>
 
-</head>
-
-<body onscroll="scrollAction()">
-    <nav class="navbar transition-all duration-200 ease-in text-white flex sticky top-0 lg:justify-around gap-20 z-10">
-        <div class="branding my-2 mx-4 ml-10 md:flex md:gap-3 lg:ml-2">
-            <img src="./images/logoConverted.png" alt="" class="brand-logo h-12 invert">
-            <span class="hidden md:inline md:self-center md:text-lg md:hover:cursor-default">Akshar Enterprise</span>
-        </div>
-        <ul class="hidden lg:flex lg:self-center lg:gap-12">
-            <li class="transition-all duration-200 ease-in"><a href="#" class="peer">Home</a>
-                <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
-            </li>
-            <li class="transition-all duration-200 ease-in"><a href="#" class="peer">Services</a>
-                <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
-            </li>
-            <li class="transition-all duration-200 ease-in"><a href="#" class="peer">Projects</a>
-                <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
-            </li>
-            <li class="transition-all duration-200 ease-in"><a href="#" class="peer">About Us</a>
-                <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
-            </li>
-            <li class="transition-all duration-200 ease-in"><a href="#" class="peer">Contect Us</a>
-                <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
-            </li>
-        </ul>
-        <ul
-            class="nav-menu transition-all duration-200 ease nav-menu lg:hidden fixed top-14 -right-full bg-slate-50 w-full text-black">
-            <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#"
-                    class="peer">Home</a>
-                <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black">
-            </li>
-            <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#"
-                    class="peer">Services</a>
-                <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black">
-            </li>
-            <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#"
-                    class="peer">Projects</a>
-                <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black">
-            </li>
-            <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#"
-                    class="peer">About Us</a>
-                <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black">
-            </li>
-            <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#"
-                    class="peer">Contect Us</a>
-                <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black">
-            </li>
-        </ul>
-        <div class="absolute right-0 hamburger lg:hidden w-8 mr-10 self-center">
-            <div class="bar transition-all duration-300 ease bg-white h-[2px] w-full my-2"></div>
-            <div class="bar transition-all duration-300 ease bg-white h-[2px] w-[80%] my-2"></div>
-            <div class="bar transition-all duration-300 ease bg-white h-[2px] w-full my-2"></div>
-        </div>
+  <body onscroll="scrollAction()">
+    <div class="loader"></div>
+    <nav
+      class="navbar transition-all duration-200 ease-in text-white flex sticky top-0 lg:justify-around gap-20 z-10"
+    >
+      <div class="branding my-2 mx-4 ml-10 md:flex md:gap-3 lg:ml-2">
+        <img
+          src="./images/logoConverted.png"
+          alt=""
+          class="brand-logo h-12 invert"
+        />
+        <span
+          class="hidden md:inline md:self-center md:text-lg md:hover:cursor-default"
+          >Akshar Enterprise</span
+        >
+      </div>
+      <ul class="hidden lg:flex lg:self-center lg:gap-12">
+        <li class="transition-all duration-200 ease-in">
+          <a href="#" class="peer">Home</a>
+          <hr
+            class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full"
+          />
+        </li>
+        <li class="transition-all duration-200 ease-in">
+          <a href="#" class="peer">Services</a>
+          <hr
+            class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full"
+          />
+        </li>
+        <li class="transition-all duration-200 ease-in">
+          <a href="#" class="peer">Projects</a>
+          <hr
+            class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full"
+          />
+        </li>
+        <li class="transition-all duration-200 ease-in">
+          <a href="#" class="peer">About Us</a>
+          <hr
+            class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full"
+          />
+        </li>
+        <li class="transition-all duration-200 ease-in">
+          <a href="#" class="peer">Contect Us</a>
+          <hr
+            class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full"
+          />
+        </li>
+      </ul>
+      <ul
+        class="nav-menu transition-all duration-200 ease nav-menu lg:hidden fixed top-14 -right-full bg-slate-50 w-full text-black"
+      >
+        <li
+          class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto"
+        >
+          <a href="#" class="peer">Home</a>
+          <hr
+            class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black"
+          />
+        </li>
+        <li
+          class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto"
+        >
+          <a href="#" class="peer">Services</a>
+          <hr
+            class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black"
+          />
+        </li>
+        <li
+          class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto"
+        >
+          <a href="#" class="peer">Projects</a>
+          <hr
+            class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black"
+          />
+        </li>
+        <li
+          class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto"
+        >
+          <a href="#" class="peer">About Us</a>
+          <hr
+            class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black"
+          />
+        </li>
+        <li
+          class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto"
+        >
+          <a href="#" class="peer">Contect Us</a>
+          <hr
+            class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black"
+          />
+        </li>
+      </ul>
+      <div class="absolute right-0 hamburger lg:hidden w-8 mr-10 self-center">
+        <div
+          class="bar transition-all duration-300 ease bg-white h-[2px] w-full my-2"
+        ></div>
+        <div
+          class="bar transition-all duration-300 ease bg-white h-[2px] w-[80%] my-2"
+        ></div>
+        <div
+          class="bar transition-all duration-300 ease bg-white h-[2px] w-full my-2"
+        ></div>
+      </div>
     </nav>
     <div class="container">
-        <div class="absolute inset-0 carousel -z-10">
-            <div
-                class="slide absolute top-0 bg-cover bg-center w-full min-h-[550px] lg:min-h-[700px] bg-fixed bg-[url('../images/m-background-1.jpg')] lg:bg-[url('../images/background-1.jpg')] transition-all duration-1000 ease-in">
-            </div>
-            <div
-                class="slide absolute top-0 bg-cover bg-center w-full min-h-[550px] lg:min-h-[700px] bg-fixed bg-[url('../images/m-background-2.jpg')] lg:bg-[url('../images/background-2.jpg')] transition-all duration-1000 ease-in">
-            </div>
-            <div
-                class="slide absolute top-0 bg-cover bg-center w-full min-h-[550px] lg:min-h-[700px] bg-fixed bg-[url('../images/background-3.jpg')] transition-all duration-1000 ease-in">
-            </div>
-            <div
-                class="slide absolute top-0 bg-cover bg-center w-full min-h-[550px] lg:min-h-[700px] bg-fixed bg-[url('../images/background-4.jpg')] transition-all duration-1000 ease-in">
-            </div>
-            <div class="absoulte top-0 bg-[rgba(0,0,0,.5)] w-full min-h-[550px] lg:min-h-[700px] mix-blend-darken">
-            </div>
-        </div>
+      <div class="absolute inset-0 carousel -z-10">
+        <div
+          class="slide absolute top-0 bg-cover bg-center w-full min-h-[550px] lg:min-h-[700px] bg-fixed bg-[url('../images/m-background-1.jpg')] lg:bg-[url('../images/background-1.jpg')] transition-all duration-1000 ease-in"
+        ></div>
+        <div
+          class="slide absolute top-0 bg-cover bg-center w-full min-h-[550px] lg:min-h-[700px] bg-fixed bg-[url('../images/m-background-2.jpg')] lg:bg-[url('../images/background-2.jpg')] transition-all duration-1000 ease-in"
+        ></div>
+        <div
+          class="slide absolute top-0 bg-cover bg-center w-full min-h-[550px] lg:min-h-[700px] bg-fixed bg-[url('../images/background-3.jpg')] transition-all duration-1000 ease-in"
+        ></div>
+        <div
+          class="slide absolute top-0 bg-cover bg-center w-full min-h-[550px] lg:min-h-[700px] bg-fixed bg-[url('../images/background-4.jpg')] transition-all duration-1000 ease-in"
+        ></div>
+        <div
+          class="absoulte top-0 bg-[rgba(0,0,0,.5)] w-full min-h-[550px] lg:min-h-[700px] mix-blend-darken"
+        ></div>
+      </div>
     </div>
 
     <!-- Home section -->
-    <div class="home-section container mx-auto p-3 min-h-[500px] lg:min-h-[650px] overflow-hidden select-none">
-        <div class="w-[80%] mt-12 md:mt-[150px] mx-auto px-0 md:px-6">
-            <div class="landing-head text-5xl md:text-6xl lg:text-7xl text-white w-[300px] md:w-[500px] lg:w-[700px] mb-6"
-                data-aos="fade-up"><b>Create a
-                    <span class="text-yellow-600">home</span> that defines <span class="text-yellow-600">who you
-                        are</span></b></div>
-            <div class="landing-text my-2 text-white text-lg md:text-xl w-[300px] md:w-[600px]" data-aos="fade-left"
-                data-aos-delay="500">We will help
-                you to make an
-                elegent
-                and
-                luxurious
-                interior
-                designed by
-                professional interrior designers</div>
+    <div
+      class="home-section container mx-auto p-3 min-h-[500px] lg:min-h-[650px] overflow-hidden select-none"
+    >
+      <div class="w-[80%] mt-12 md:mt-[150px] mx-auto px-0 md:px-6">
+        <div
+          class="landing-head text-5xl md:text-6xl lg:text-7xl text-white w-[300px] md:w-[500px] lg:w-[700px] mb-6"
+          data-aos="fade-up"
+          data-aos-once="true"
+        >
+          <b
+            >Create a <span class="text-yellow-600">home</span> that defines
+            <span class="text-yellow-600">who you are</span></b
+          >
         </div>
+        <div
+          class="landing-text my-2 text-white text-lg md:text-xl w-[300px] md:w-[600px]"
+          data-aos="fade-left"
+          data-aos-delay="500"
+          data-aos-once="true"
+        >
+          We will help you to make an elegent and luxurious interior designed by
+          professional interrior designers
+        </div>
+      </div>
     </div>
 
     <!-- badge -->
     <section class="container mx-auto my-2">
-        <div class="flex mx-auto w-fit flex-wrap px-8 md:px-6">
-            <div class="p-4 flex basis-full md:basis-6/12 lg:basis-4/12" data-aos="fade-up">
-                <div class="back-pop"></div>
-                <img src="./images/plan.png" alt="" class="w-[120px] h-[80px] mt-3">
-                <div>
-                    <div class="text-lg md:text-xl font-semibold text-yellow-800 p-1">Creative solutions</div>
-                    <div class="px-1">We create home and office aesthetics which adours by you</div>
-                </div>
+      <div class="flex mx-auto w-fit flex-wrap px-8 md:px-6">
+        <div
+          class="p-4 flex basis-full md:basis-6/12 lg:basis-4/12"
+          data-aos="fade-up"
+          data-aos-once="true"
+        >
+          <div class="back-pop"></div>
+          <img src="./images/plan.png" alt="" class="w-[120px] h-[80px] mt-3" />
+          <div>
+            <div class="text-lg md:text-xl font-semibold text-yellow-800 p-1">
+              Creative solutions
             </div>
-            <div class="p-4 flex basis-full md:basis-6/12 lg:basis-4/12" data-aos="fade-up" data-aos-delay="200">
-                <div class="back-pop"></div>
-                <img src="./images/frame.png" alt="" class="w-[120px] h-[80px] mt-4">
-                <div>
-                    <div class="text-lg md:text-xl font-semibold text-yellow-800 p-1">Desgin interrior</div>
-                    <div class="px-1">Eye catching colors and variety of color pallete with csutomizable solutions</div>
-                </div>
+            <div class="px-1">
+              We create home and office aesthetics which adours by you
             </div>
-            <div class="p-4 flex basis-full md:basis-6/12 lg:basis-4/12" data-aos="fade-up" data-aos-delay="400">
-                <div class="back-pop"></div>
-                <img src="./images/lamp.png" alt="" class="w-[120px] h-[80px] mt-4">
-                <div>
-                    <div class="text-lg md:text-xl font-semibold text-yellow-800 p-1">Intutive desgin</div>
-                    <div class="px-1">Explore forms and textures that bring you back into contact with your intuition
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+        <div
+          class="p-4 flex basis-full md:basis-6/12 lg:basis-4/12"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
+          <div class="back-pop"></div>
+          <img
+            src="./images/frame.png"
+            alt=""
+            class="w-[120px] h-[80px] mt-4"
+          />
+          <div>
+            <div class="text-lg md:text-xl font-semibold text-yellow-800 p-1">
+              Desgin interrior
+            </div>
+            <div class="px-1">
+              Eye catching colors and variety of color pallete with csutomizable
+              solutions
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-4 flex basis-full md:basis-6/12 lg:basis-4/12"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-once="true"
+        >
+          <div class="back-pop"></div>
+          <img src="./images/lamp.png" alt="" class="w-[120px] h-[80px] mt-4" />
+          <div>
+            <div class="text-lg md:text-xl font-semibold text-yellow-800 p-1">
+              Intutive desgin
+            </div>
+            <div class="px-1">
+              Explore forms and textures that bring you back into contact with
+              your intuition
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- What we do -->
     <section class="container mx-auto mt-6">
-        <div class="lined-heading" data-aos="fade-up">What we do</div>
-        <div class="cards">
-            <div class="card group" data-aos="fade-up">
-                <div class="item">
-                    <div class="card-img group">
-                        <img src="./images/bedroom.jpg" alt=""
-                            class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125">
-                        <div class="img-cover"></div>
-                    </div>
-                    <div class="pt-2 pb-4 px-4 group">
-                        <div class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative">
-                            Bedroom design
-                            <div class="ch-line"></div>
-                        </div>
-                        <div class="group">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis
-                            dolorum, iure non
-                            a voluptate velit saepe doloribus amet suscipit deleniti laboriosam ad rerum, molestiae
-                            iusto.
-                            Sit, expedita pariatur! Nulla.</div>
-                    </div>
-                </div>
+      <div class="lined-heading" data-aos="fade-up" data-aos-once="true">
+        What we do
+      </div>
+      <div class="cards">
+        <div class="card group" data-aos="fade-up" data-aos-once="true">
+          <div class="item">
+            <div class="card-img group">
+              <img
+                src="./images/bedroom.jpg"
+                alt=""
+                class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125"
+              />
+              <div class="img-cover"></div>
             </div>
-            <div class="card group" data-aos="fade-up" data-aos-delay="200">
-                <div class="item">
-                    <div class="card-img group">
-                        <img src="./images/kitchen.jpg" alt=""
-                            class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125">
-                        <div class="img-cover"></div>
-                    </div>
-                    <div class="pt-2 pb-4 px-4 group">
-                        <div class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative">
-                            Kitchen design
-                            <div class="ch-line"></div>
-                        </div>
-                        <div class="group">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis
-                            dolorum, iure non
-                            a voluptate velit saepe doloribus amet suscipit deleniti laboriosam ad rerum, molestiae
-                            iusto.
-                            Sit, expedita pariatur! Nulla.</div>
-                    </div>
-                </div>
+            <div class="pt-2 pb-4 px-4 group">
+              <div
+                class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative"
+              >
+                Bedroom design
+                <div class="ch-line"></div>
+              </div>
+              <div class="group">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                perferendis dolorum, iure non a voluptate velit saepe doloribus
+                amet suscipit deleniti laboriosam ad rerum, molestiae iusto.
+                Sit, expedita pariatur! Nulla.
+              </div>
             </div>
-            <div class="card group" data-aos="fade-up" data-aos-delay="400">
-                <div class="item">
-                    <div class="card-img group">
-                        <img src="./images/floor.jpg" alt=""
-                            class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125">
-                        <div class="img-cover"></div>
-                    </div>
-                    <div class="pt-2 pb-4 px-4 group">
-                        <div class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative">
-                            Floor design
-                            <div class="ch-line"></div>
-                        </div>
-                        <div class="group">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis
-                            dolorum, iure non
-                            a voluptate velit saepe doloribus amet suscipit deleniti laboriosam ad rerum, molestiae
-                            iusto.
-                            Sit, expedita pariatur! Nulla.</div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div
+          class="card group"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
+          <div class="item">
+            <div class="card-img group">
+              <img
+                src="./images/kitchen.jpg"
+                alt=""
+                class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125"
+              />
+              <div class="img-cover"></div>
+            </div>
+            <div class="pt-2 pb-4 px-4 group">
+              <div
+                class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative"
+              >
+                Kitchen design
+                <div class="ch-line"></div>
+              </div>
+              <div class="group">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                perferendis dolorum, iure non a voluptate velit saepe doloribus
+                amet suscipit deleniti laboriosam ad rerum, molestiae iusto.
+                Sit, expedita pariatur! Nulla.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-once="true"
+        >
+          <div class="item">
+            <div class="card-img group">
+              <img
+                src="./images/floor.jpg"
+                alt=""
+                class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125"
+              />
+              <div class="img-cover"></div>
+            </div>
+            <div class="pt-2 pb-4 px-4 group">
+              <div
+                class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative"
+              >
+                Floor design
+                <div class="ch-line"></div>
+              </div>
+              <div class="group">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                perferendis dolorum, iure non a voluptate velit saepe doloribus
+                amet suscipit deleniti laboriosam ad rerum, molestiae iusto.
+                Sit, expedita pariatur! Nulla.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-</body>
-
-
+  </body>
 </html>

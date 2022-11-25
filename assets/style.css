@@ -502,6 +502,73 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.loader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.loader::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 3.5rem;
+  content: var(--tw-content);
+  width: 3.5rem;
+}
+
+@-webkit-keyframes spin {
+  to {
+    content: var(--tw-content);
+    transform: rotate(360deg);
+  }
+
+  0% {
+    content: var(--tw-content);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    content: var(--tw-content);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    content: var(--tw-content);
+    transform: rotate(360deg);
+  }
+
+  0% {
+    content: var(--tw-content);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    content: var(--tw-content);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.loader::after {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  border-radius: 9999px;
+  border-width: 2px;
+  border-color: rgb(254 240 138 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(161 98 7 / var(--tw-border-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -704,7 +771,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,.4);
 }
 
 .ch-line {
@@ -918,6 +985,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .basis-full {
   flex-basis: 100%;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .select-none {

@@ -1,5 +1,9 @@
 @tailwind base;
 @tailwind components;
+.loader{
+    @apply w-full h-full absolute top-0 left-0 bg-white z-50 overflow-hidden after:content-[''] after:absolute after:h-[3.5rem] after:w-[3.5rem] after:border-2 after:rounded-full after:border-yellow-200 after:border-b-yellow-700 after:animate-spin after:top-1/2 after:left-1/2
+}
+
 .hamburger.active .bar:nth-child(2){
     @apply opacity-0;    
 }
@@ -63,7 +67,7 @@
     @apply rounded-xl overflow-hidden relative
 }
 .img-cover{
-    @apply absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,.6)]
+    @apply absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,.4)]
 }
 .ch-line{
     @apply transition-all duration-300 ease-out absolute -bottom-1 left-0 h-[2px] w-0 bg-yellow-700 group-hover:w-[50%]
