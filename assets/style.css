@@ -502,6 +502,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .loader {
   position: absolute;
   top: 0px;
@@ -561,10 +565,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-animation: spin 1s linear infinite;
           animation: spin 1s linear infinite;
   border-radius: 9999px;
-  border-width: 2px;
-  border-color: rgb(254 240 138 / var(--tw-border-opacity));
-  --tw-border-opacity: 1;
+  border-width: 4px;
+  border-color: transparent;
   border-bottom-color: rgb(161 98 7 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-left-color: rgb(161 98 7 / var(--tw-border-opacity));
   --tw-content: '';
   content: var(--tw-content);
 }
@@ -771,7 +776,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0,0,0,.2);
 }
 
 .ch-line {
@@ -1041,6 +1046,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgba(0,0,0,.5);
 }
 
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/images\/m-background-1\.jpg\'\)\] {
   background-image: url('../images/m-background-1.jpg');
 }
@@ -1081,6 +1091,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1107,6 +1121,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-5xl {
@@ -1207,8 +1225,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .md\:mt-\[150px\] {
-    margin-top: 150px;
+  .md\:mt-\[90px\] {
+    margin-top: 90px;
   }
 
   .md\:inline {
@@ -1267,6 +1285,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1024px) {
   .lg\:ml-2 {
     margin-left: 0.5rem;
+  }
+
+  .lg\:mt-\[150px\] {
+    margin-top: 150px;
   }
 
   .lg\:flex {

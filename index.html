@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="interior, best interrior, akshar home, interrior akshar,akshar interrior, akshar enterprise, akshar"
+    />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
@@ -17,7 +21,7 @@
   </head>
 
   <body onscroll="scrollAction()">
-    <div class="loader"></div>
+    <div class="loader" id="home"></div>
     <nav
       class="navbar transition-all duration-200 ease-in text-white flex sticky top-0 lg:justify-around gap-20 z-10"
     >
@@ -34,31 +38,31 @@
       </div>
       <ul class="hidden lg:flex lg:self-center lg:gap-12">
         <li class="transition-all duration-200 ease-in">
-          <a href="#" class="peer">Home</a>
+          <a href="#home" class="peer scroll-link">Home</a>
           <hr
             class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full"
           />
         </li>
         <li class="transition-all duration-200 ease-in">
-          <a href="#" class="peer">Services</a>
+          <a href="#services" class="peer scroll-link">Services</a>
           <hr
             class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full"
           />
         </li>
         <li class="transition-all duration-200 ease-in">
-          <a href="#" class="peer">Projects</a>
+          <a href="#" class="peer scroll-link">Projects</a>
           <hr
             class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full"
           />
         </li>
         <li class="transition-all duration-200 ease-in">
-          <a href="#" class="peer">About Us</a>
+          <a href="#" class="peer scroll-link">About Us</a>
           <hr
             class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full"
           />
         </li>
         <li class="transition-all duration-200 ease-in">
-          <a href="#" class="peer">Contect Us</a>
+          <a href="#" class="peer scroll-link">Contect Us</a>
           <hr
             class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full"
           />
@@ -70,7 +74,7 @@
         <li
           class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto"
         >
-          <a href="#" class="peer">Home</a>
+          <a href="#home" class="peer scroll-link">Home</a>
           <hr
             class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black"
           />
@@ -78,7 +82,7 @@
         <li
           class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto"
         >
-          <a href="#" class="peer">Services</a>
+          <a href="#services" class="peer scroll-link">Services</a>
           <hr
             class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black"
           />
@@ -86,7 +90,7 @@
         <li
           class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto"
         >
-          <a href="#" class="peer">Projects</a>
+          <a href="#" class="peer scroll-link">Projects</a>
           <hr
             class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black"
           />
@@ -94,7 +98,7 @@
         <li
           class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto"
         >
-          <a href="#" class="peer">About Us</a>
+          <a href="#" class="peer scroll-link">About Us</a>
           <hr
             class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black"
           />
@@ -102,7 +106,7 @@
         <li
           class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto"
         >
-          <a href="#" class="peer">Contect Us</a>
+          <a href="#" class="peer scroll-link">Contect Us</a>
           <hr
             class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full border-black"
           />
@@ -144,7 +148,9 @@
     <div
       class="home-section container mx-auto p-3 min-h-[500px] lg:min-h-[650px] overflow-hidden select-none"
     >
-      <div class="w-[80%] mt-12 md:mt-[150px] mx-auto px-0 md:px-6">
+      <div
+        class="w-[80%] mt-12 md:mt-[90px] lg:mt-[150px] mx-auto px-0 md:px-6"
+      >
         <div
           class="landing-head text-5xl md:text-6xl lg:text-7xl text-white w-[300px] md:w-[500px] lg:w-[700px] mb-6"
           data-aos="fade-up"
@@ -230,7 +236,7 @@
     </section>
 
     <!-- What we do -->
-    <section class="container mx-auto mt-6">
+    <section class="container mx-auto mt-6" id="services">
       <div class="lined-heading" data-aos="fade-up" data-aos-once="true">
         What we do
       </div>
@@ -239,7 +245,7 @@
           <div class="item">
             <div class="card-img group">
               <img
-                src="./images/bedroom.jpg"
+                src="./images/living-room.jpg"
                 alt=""
                 class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125"
               />
@@ -249,14 +255,13 @@
               <div
                 class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative"
               >
-                Bedroom design
+                Living room design
                 <div class="ch-line"></div>
               </div>
               <div class="group">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                perferendis dolorum, iure non a voluptate velit saepe doloribus
-                amet suscipit deleniti laboriosam ad rerum, molestiae iusto.
-                Sit, expedita pariatur! Nulla.
+                We will gladly create a new stunning interior design for your
+                living room taking into account all your wishes and
+                considerations to make it look even better.
               </div>
             </div>
           </div>
@@ -284,10 +289,9 @@
                 <div class="ch-line"></div>
               </div>
               <div class="group">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                perferendis dolorum, iure non a voluptate velit saepe doloribus
-                amet suscipit deleniti laboriosam ad rerum, molestiae iusto.
-                Sit, expedita pariatur! Nulla.
+                Whether it is a part of a residential house or a restaurant, a
+                nicely structured and well-designed kitchen is vital for better
+                experience regardless of its size.
               </div>
             </div>
           </div>
@@ -301,7 +305,7 @@
           <div class="item">
             <div class="card-img group">
               <img
-                src="./images/floor.jpg"
+                src="./images/bedroom.jpg"
                 alt=""
                 class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125"
               />
@@ -311,19 +315,112 @@
               <div
                 class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative"
               >
-                Floor design
+                Bedroom desgin
                 <div class="ch-line"></div>
               </div>
               <div class="group">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                perferendis dolorum, iure non a voluptate velit saepe doloribus
-                amet suscipit deleniti laboriosam ad rerum, molestiae iusto.
-                Sit, expedita pariatur! Nulla.
+                Bedroom can be described as indoor area attached with peace of
+                resident and our skills and professionalism allow us to work on
+                their visual and functional improvement.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card group" data-aos="fade-up" data-aos-once="true">
+          <div class="item">
+            <div class="card-img group">
+              <img
+                src="./images/Office.jpg"
+                alt=""
+                class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125"
+              />
+              <div class="img-cover"></div>
+            </div>
+            <div class="pt-2 pb-4 px-4 group">
+              <div
+                class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative"
+              >
+                Office design
+                <div class="ch-line"></div>
+              </div>
+              <div class="group">
+                Our design studio often deals with office remodeling and
+                redesign. We can successfully transform your office into a
+                visually attractive center of business activity.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
+          <div class="item">
+            <div class="card-img group">
+              <img
+                src="./images/terrace.jpg"
+                alt=""
+                class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125"
+              />
+              <div class="img-cover"></div>
+            </div>
+            <div class="pt-2 pb-4 px-4 group">
+              <div
+                class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative"
+              >
+                Studios design
+                <div class="ch-line"></div>
+              </div>
+              <div class="group">
+                While not being limited by residential projects and office
+                remodeling, we are also eager to work on designing studios and
+                educational centers.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-once="true"
+        >
+          <div class="item">
+            <div class="card-img group">
+              <img
+                src="./images/Guest-room.jpg"
+                alt=""
+                class="h-[250px] w-full transition-all duration-300 ease-out group-hover:scale-125"
+              />
+              <div class="img-cover"></div>
+            </div>
+            <div class="pt-2 pb-4 px-4 group">
+              <div
+                class="font-bold text-2xl text-yellow-700 mt-2 mb-4 group relative"
+              >
+                Guest room
+                <div class="ch-line"></div>
+              </div>
+              <div class="group">
+                Looking for an idea to create a new or transform an old guest
+                room? Trust our exceptionally skilled designers and architects
+                if you are aiming for the best results.
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <footer class="bg-yellow-200 mt-3">
+      <div class="container mx-auto">
+        <div></div>
+        <div class="text-center p-2">
+          All rights reserved by <b>Akshar Enterprise</b> &copy;
+          <span class="date-time"></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

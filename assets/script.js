@@ -1,16 +1,18 @@
+// Aos library
 AOS.init({
   startEvent: "DOMContentLoaded",
   offset: 100,
   duration: 1000,
 });
 
+// Page loader
 window.addEventListener("load", () => {
   document.querySelector(".loader").classList.remove("loader");
 });
 
+// Navigation baar styling
 let elem = document.querySelector(".navbar");
 function scrollAction() {
-  console.log(window.scrollY);
   elem.classList.toggle("scroll-active", window.scrollY > 0);
   if (window.scrollY > 0) {
     elem.classList.add("scroll-active");
@@ -72,3 +74,27 @@ function nextSlide() {
   count++;
 }
 slideShow();
+
+// Date time
+const dataTime = document.querySelector(".date-time");
+dataTime.textContent = new Date().getFullYear().toString();
+
+// Smooth scroll
+
+const scrollLinks = document.querySelectorAll(".scroll-link");
+
+scrollLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    // prevent default
+    e.preventDefault();
+    // navigate to specific spot
+    const id = e.currentTarget.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+    const navHeight = navbar.getBoundingClientRect().height;
+    let position = element.offsetTop - navHeight;
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+  });
+});
