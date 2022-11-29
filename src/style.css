@@ -4,7 +4,7 @@
     @apply scroll-smooth
 }
 .loader{
-    @apply w-full h-full absolute top-0 left-0 bg-white z-50 overflow-hidden after:content-[''] after:absolute after:h-[3.5rem] after:w-[3.5rem] after:border-4 after:rounded-full after:border-transparent after:border-b-yellow-700 after:border-l-yellow-700 after:animate-spin after:top-1/2 after:left-1/2
+    @apply w-full h-full fixed top-0 left-0 bg-white z-50 overflow-hidden after:content-[''] after:fixed after:h-[3.5rem] after:w-[3.5rem] after:border-4 after:rounded-full after:border-transparent after:border-b-yellow-700 after:border-l-yellow-700 after:animate-spin after:top-1/2 after:left-1/2
 }
 
 .hamburger.active .bar:nth-child(2){
